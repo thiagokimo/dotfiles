@@ -9,7 +9,7 @@ man-db,A utility for reading man pages,Pre
 man-pages,Linux man pages,Pre
 netctl,Profile based systemd network management,Pre
 vim,Vi Improved, a highly configurable, improved version of the vi text editor,Pre
-intel-ucode,Microcode update files for Intel CPUs,Pre (if using intel, of course)
+intel-ucode,Microcode update files for Intel CPUs,Pre (if using intel of course)
 dialog,A tool to display dialog boxes from shell scripts,Pre
 wpa_supplicant,A utility providing key negotiation for WPA wireless networks,Pre
 xorg-server,Xorg X server,Post
