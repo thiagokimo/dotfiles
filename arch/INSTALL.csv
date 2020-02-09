@@ -1,4 +1,4 @@
-NAME,WHAT,WHEN
+NAME,WHAT,Pre or Post install?
 base,Minimal package set to define a basic Arch Linux installation,Pre
 base-devel,Extra tools,Pre
 linux,The Linux kernel and modules,Pre
