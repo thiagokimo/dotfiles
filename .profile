@@ -3,7 +3,9 @@
 #
 # If not running interactively, don't do anything
 
-export PATH="$PATH:$HOME/.local/bin/"
+export ANDROID_SDK_HOME="$HOME/Android/Sdk"
+export ANDROID_STUDIO_HOME="$HOME/android-studio"
+export PATH="$PATH:$HOME/.local/bin/:$ANDROID_SDK_HOME/platform-tools/"
 
 [[ $- != *i* ]] && return
 
