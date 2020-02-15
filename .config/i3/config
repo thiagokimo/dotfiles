@@ -179,3 +179,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+gaps inner 10
+gaps outer 0
+smart_gaps on
+
