@@ -1,1 +1,2 @@
 [ -f ~/.profile ] && . ~/.profile
+neofetch
