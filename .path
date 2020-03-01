@@ -1,11 +1,16 @@
 #!/bin/bash
 
 # Android
-export ANDROID_SDK_HOME="$HOME/Android/"
-export ANDROID_STUDIO_HOME="$HOME/android-studio/"
+export ANDROID_SDK_HOME=${HOME}/Android/
+export ANDROID_STUDIO_HOME=${HOME}/android-studio/
+export ANDROID_PLATFORM_TOOLS=${ANDROID_SDK_HOME}/Sdk/platform-tools/
 
 # Flutter
-export FLUTTER_SDK_HOME="$HOME/flutter/"
+export FLUTTER_SDK_HOME=${HOME}/flutter/
+export FLUTTER_TOOLS="${FLUTTER_SDK_HOME}/bin"
 
-export PATH="$PATH:$HOME/.local/bin/:$ANDROID_SDK_HOME/Sdk/platform-tools/:$FLUTTER_SDK_HOME/bin"
+# Shorcuts
+export SHORTCUTS_HOME=${HOME}/.local/bin
+
+export PATH=${PATH}:${SHORTCUTS_HOME}:${ANDROID_PLATFORM_TOOLS}:${FLUTTER_TOOLS}
 
