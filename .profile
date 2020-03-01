@@ -1,11 +1,6 @@
-#
-# ~/.bashrc
-#
-# If not running interactively, don't do anything
+#!/bin/bash
 
-export ANDROID_SDK_HOME="$HOME/Android/"
-export ANDROID_STUDIO_HOME="$HOME/android-studio"
-export PATH="$PATH:$HOME/.local/bin/:$ANDROID_SDK_HOME/Sdk/platform-tools/"
+[ -f ~/.path ] && . ~/.path
 
 [[ $- != *i* ]] && return
 

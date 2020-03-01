@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Android
+export ANDROID_SDK_HOME="$HOME/Android/"
+export ANDROID_STUDIO_HOME="$HOME/android-studio/"
+
+# Flutter
+export FLUTTER_SDK_HOME="$HOME/flutter/"
+
+export PATH="$PATH:$HOME/.local/bin/:$ANDROID_SDK_HOME/Sdk/platform-tools/:$FLUTTER_SDK_HOME/bin"
+
