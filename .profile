@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
+alias ll='ls -l --color=auto'
 
 # Git aliases
 alias gp='git push'
