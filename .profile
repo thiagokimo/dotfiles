@@ -8,6 +8,13 @@
 alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
 
+# Git aliases
+alias gp='git push'
+alias gc='git commit'
+alias gl='git log'
+alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+alias gst='git status'
+
 # Name on the terminal
 PS1='[\u@\h \W]\$ '
 
