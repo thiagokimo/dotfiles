@@ -28,3 +28,4 @@ android-udev,"Udev rules to connect Android devices to your linux box",Post
 xorg-xrandr,"Primitive command line interface to RandR extension",Post
 w3m,"Terminal browser - Mostly used to preview images in ranger",Post
 zsh,"Better shell",Post
+rofi,"Application launcher",Post
