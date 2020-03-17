@@ -30,3 +30,4 @@ w3m,"Terminal browser - Mostly used to preview images in ranger",Post
 zsh,"Better shell",Post
 rofi,"Application launcher",Post
 i3-scrot,"A scrot script for i3",Post
+dunst,"A lightweight replacement for the notification-daemons provided by most desktop environments.",Post
