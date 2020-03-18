@@ -2,6 +2,7 @@ set $mod Mod4
 
 font pango:monospace 8
 
+exec --no-startup-id feh --randomize --bg-scale /$HOME/Pictures/wallpapers
 exec --no-startup-id dunst
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
@@ -159,7 +160,7 @@ bar {
         status_command i3status
 }
 
-gaps inner 10
-gaps outer 0
+gaps inner 20
+gaps outer 10 
 smart_gaps on
 
