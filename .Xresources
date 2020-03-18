@@ -1,3 +1,18 @@
+! font
+Xft*dpi: 96
+Xft*hinting: true
+Xft*rgba: rgb
+Xft*autohint: false
+Xft*hintstyle: hintslight
+Xft*lcdfilter: lcddefault
+
+! urxvt
+URxvt*perl-ext-common: default,matcher
+URxvt*scrollBar: false
+Rxvt*cursorUnderline: true
+URxvt*internalBorder: 15
+URxvt*letterSpace: 0
+
 ! special
 *.foreground:   #c5c8c6
 *.background:   #1d1f21
