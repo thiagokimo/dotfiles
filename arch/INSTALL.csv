@@ -32,3 +32,6 @@ rofi,"Application launcher",Post
 i3-scrot,"A scrot script for i3",Post
 dunst,"A lightweight replacement for the notification-daemons provided by most desktop environments.",Post
 feh,"Wallpaper tool",Post
+telegram-desktop,"Chat client",Post
+discord,"Chat client",Post
+python-pywal,"Generate coloschemes on the fly",Post
