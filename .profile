@@ -3,18 +3,10 @@
 # Load path config file
 [ -f ~/.path ] && . ~/.path
 
+# Load aliases
+[ -f ~/.aliases ] && . ~/.aliases
+
 [[ $- != *i* ]] && return
-
-#alias ls='ls --color=auto'
-#alias la='ls -la --color=auto'
-#alias ll='ls -l --color=auto'
-
-# Git aliases
-#alias gp='git push'
-#alias gc='git commit'
-#alias gl='git log'
-#alias glol="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-#alias gst='git status'
 
 # Alias to manage the dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
