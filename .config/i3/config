@@ -7,16 +7,26 @@ exec --no-startup-id sleep 2; sh $HOME/.scripts/apply-colors.sh
 exec --no-startup-id dunst
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-#exec --no-startup-id nm-applet
+###--- i3 coloring ---###
+# Make it clear when failed using red - otherwise set i3 colors with wal from xresources
+set_from_resource $bg           i3wm.color0 #ff0000
+set_from_resource $bg-alt       i3wm.color14 #ff0000
+set_from_resource $fg           i3wm.color15 #ff0000
+set_from_resource $fg-alt       i3wm.color2 #ff0000
+set_from_resource $hl           i3wm.color13 #ff0000
 
-# Use pactl to adjust volume in PulseAudio.
-#set $refresh_i3status killall -SIGUSR1 i3status
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+# class                 border      backgr. text indicator      child_border
+client.focused          $fg-alt     $bg     $hl  $fg-alt        $hl
+client.focused_inactive $fg-alt     $bg     $fg  $fg-alt        $fg-alt
+client.unfocused        $fg-alt     $bg     $fg  $fg-alt        $fg-alt
+client.urgent           $fg-alt     $bg     $fg  $fg-alt        $fg-alt
+client.placeholder      $fg-alt     $bg     $fg  $fg-alt        $fg-alt
+
+client.background       $bg
+
+# Window border
+new_window pixel 3
+default_border pixel 3
 
 # Print screen
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
@@ -157,9 +167,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+# bar {
+#       status_command i3status
+# }
 
 gaps inner 14
 gaps outer -2 

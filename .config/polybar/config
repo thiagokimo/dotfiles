@@ -67,7 +67,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3icons
 modules-center = date
-modules-right = filesystem cpu alsa keyboard temperature
+modules-right = filesystem cpu alsa temperature battery
 
 ;fix tray position
 ;override-redirect = true

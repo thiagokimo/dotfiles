@@ -19,9 +19,6 @@
 # Alias to manage the dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# Name on the terminal
-#PS1='[\u@\h \W]\$ '
-
 # Startx on login
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx
 
