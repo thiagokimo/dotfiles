@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/thiago/Pictures/wallpapers/blush.jpg"
+let background = "#311e2a"
+let foreground = "#c9e0e8"
+let cursor     = "#c9e0e8"
+
+" Colors
+let color0  = "#311e2a"
+let color1  = "#0E91AC"
+let color2  = "#6091AC"
+let color3  = "#12B0CD"
+let color4  = "#50C5DC"
+let color5  = "#A693AC"
+let color6  = "#A2B3CA"
+let color7  = "#c9e0e8"
+let color8  = "#8c9ca2"
+let color9  = "#0E91AC"
+let color10 = "#6091AC"
+let color11 = "#12B0CD"
+let color12 = "#50C5DC"
+let color13 = "#A693AC"
+let color14 = "#A2B3CA"
+let color15 = "#c9e0e8"
