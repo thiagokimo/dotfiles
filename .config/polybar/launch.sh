@@ -23,4 +23,4 @@ export POLY_WS_ICON_6="7;%{F$foreground_alt}%{F-} rnd"
 export POLY_WS_ICON_7="8;%{F$foreground_alt}%{F-} rnd"
 export POLY_WS_ICON_8="9;%{F$foreground_alt}%{F-} rnd"
 
-polybar main 
+polybar main
