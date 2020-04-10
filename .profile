@@ -6,6 +6,9 @@
 # Load aliases
 [ -f ~/.aliases ] && . ~/.aliases
 
+# Load tokens
+[ -f ~/.tokens ] && . ~/.tokens
+
 [[ $- != *i* ]] && return
 
 # Alias to manage the dotfiles

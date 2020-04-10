@@ -1,3 +1,4 @@
+filetype plugin on
 syntax on
 colorscheme colors-wal 
 set encoding=utf-8

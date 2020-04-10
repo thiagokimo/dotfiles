@@ -41,6 +41,14 @@ for_window [class="(?i)telegram"] focus
 assign [class="(?i)jetbrains-studio"] 2
 for_window [class="(?i)jetbrains-studio"] focus
 
+assign [class="(?i)Godot"] 2
+for_window [class="(?i)Godot"] focus
+
+
+# Video
+assign [class="(?i)vlc"] 5
+for_window [class="(?i)vlc"] focus 
+
 # Window border
 new_window pixel 3
 default_border pixel 3
