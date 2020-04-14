@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Load main configs
-[ -f ~/.profile ] && . ~/.profile
+[ -f ~/.xprofile ] && . ~/.xprofile
 
 # Force rxvt stuff
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
