@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Load path config file
 [ -f ~/.path ] && . ~/.path
