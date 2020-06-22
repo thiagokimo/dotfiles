@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
 # Load main configs
-[ -f ~/.xprofile ] && . ~/.xprofile
+[ -f ~/.profile ] && . ~/.profile
 
 # Force rxvt stuff
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-exec i3
+exec i3 
