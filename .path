@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Rice
+export RICE_HOME=${HOME}/.config/rice
+
 # Android
 export ANDROID_SDK_HOME=${HOME}/Android/
 export ANDROID_STUDIO_HOME=${HOME}/android-studio/
