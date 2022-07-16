@@ -2,8 +2,10 @@ set $mod Mod4
 
 font pango:monospace 8
 
-exec --no-startup-id sleep 2; sh $HOME/.scripts/apply-colors.sh
-#exec --no-startup-id wal -i $WALLPAPERS_HOME
+# rice
+exec_always --no-startup-id sh $RICE_HOME/launch.sh
+
+# exec --no-startup-id sleep 2; sh $HOME/.scripts/apply-colors.sh
 exec --no-startup-id dunst
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
