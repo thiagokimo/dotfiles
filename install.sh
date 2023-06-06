@@ -61,6 +61,7 @@ ensureConfigFolder() { \
 # $1 - name of what the thing is (just used to display what is happening)
 # $2 - source (path)
 # $3 - symlink destination (path)
+# $4 - name of file or folder
 #
 # # # # # # # # # # # # #
 symlinkContent() { \
@@ -88,22 +89,37 @@ makeDotsExecutable() { \
 
 symlinkStuff() { \
   # dots in the home root
-  symlinkContent "PROFILE" "$SCRIPT_DIR/profile" "$PATH_HOME/.profile" 
-  symlinkContent "PATH" "$SCRIPT_DIR/path" "$PATH_HOME/.path" 
-  symlinkContent "ZSHRC" "$SCRIPT_DIR/zshrc" "$PATH_HOME/.zshrc" 
-  symlinkContent "XINITRC" "$SCRIPT_DIR/xinitrc" "$PATH_HOME/.xinitrc" 
-  symlinkContent "VIMRC" "$SCRIPT_DIR/vimrc" "$PATH_HOME/.vimrc"
+  ln -sf $SCRIPT_DIR/profile .profile
+  ln -sf $SCRIPT_DIR/path .path
+  ln -sf $SCRIPT_DIR/zshrc .zshrc
+  ln -sf $SCRIPT_DIR/xinitrc .xinitrc
+  ln -sf $SCRIPT_DIR/vimrc .vimrc
+  
+  # symlinkContent "PROFILE" "$SCRIPT_DIR/profile" "$PATH_HOME/.profile" ".profile" 
+  # symlinkContent "PATH" "$SCRIPT_DIR/path" "$PATH_HOME/.path" ".path"
+  # symlinkContent "ZSHRC" "$SCRIPT_DIR/zshrc" "$PATH_HOME/.zshrc" ".zshrc"
+  # symlinkContent "XINITRC" "$SCRIPT_DIR/xinitrc" "$PATH_HOME/.xinitrc" ".xinitrc"
+  # symlinkContent "VIMRC" "$SCRIPT_DIR/vimrc" "$PATH_HOME/.vimrc" ".vimrc"
   
   # things from the .config folder
-  symlinkContent "BSPWM" "$SCRIPT_DIR/config/bspwm" "$PATH_HOME/.config/" 
-  symlinkContent "SXHKD" "$SCRIPT_DIR/config/sxhkd" "$PATH_HOME/.config/" 
+  ln -sf $SCRIPT_DIR/config/bspwm/bspwmrc $PATH_HOME/.config/bspwm/bspwmrc
+  ln -sf $SCRIPT_DIR/config/sxhkd/sxhkdrc $PATH_HOME/.config/sxhkd/sxhkdrc
+
+  # symlinkContent "BSPWM" "$SCRIPT_DIR/config/bspwm" "$PATH_HOME/.config/" "bspwm" 
+  # symlinkContent "SXHKD" "$SCRIPT_DIR/config/sxhkd" "$PATH_HOME/.config/" "sxhkd"
   
   # other folders (not necessarily hidden)
-  symlinkContent "SCREEN LAYOUTS" "$SCRIPT_DIR/.screenlayout" "$PATH_HOME/"
-  symlinkContent "SHORTCUTS" "$SCRIPT_DIR/.local" "$PATH_HOME/"
-  symlinkContent "WALLPAPERS" "$SCRIPT_DIR/wallpapers" "$PATH_HOME/"
-  symlinkContent "KEYBOARD KEYMAPS" "$SCRIPT_DIR/keebs" "$PATH_HOME/"
-  symlinkContent "SCRIPTS" "$SCRIPT_DIR/scripts" "$PATH_HOME/"
+  ln -sf $SCRIPT_DIR/.screenlayout $PATH_HOME/.screenlayout
+  ln -sf $SCRIPT_DIR/.bin $PATH_HOME/.bin
+  ln -sf $SCRIPT_DIR/wallpapers $PATH_HOME/wallpapers
+  ln -sf $SCRIPT_DIR/keebs $PATH_HOME/keebs
+  ln -sf $SCRIPT_DIR/scripts $PATH_HOME/scripts
+
+  # symlinkContent "SCREEN LAYOUTS" "$SCRIPT_DIR/.screenlayout" "$PATH_HOME/" ".screenlayout"
+  # symlinkContent "SHORTCUTS" "$SCRIPT_DIR/.bin" "$PATH_HOME/" ".bin"
+  # symlinkContent "WALLPAPERS" "$SCRIPT_DIR/wallpapers" "$PATH_HOME/" "wallpapers"
+  # symlinkContent "KEYBOARD KEYMAPS" "$SCRIPT_DIR/keebs" "$PATH_HOME/" "keebs"
+  # symlinkContent "SCRIPTS" "$SCRIPT_DIR/scripts" "$PATH_HOME/" "scripts"
  
   sleep 1
   echo ""
