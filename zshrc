@@ -12,4 +12,3 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.profile ] && . ~/.profile
-neofetch

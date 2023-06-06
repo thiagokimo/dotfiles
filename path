@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Rice
-export RICE_HOME=${HOME}/.config/rice
+# Dotfiles home
+export DOTFILES_HOME=${HOME}/.dotfiles
 
 # Android
 export ANDROID_SDK_HOME=${HOME}/Android/
@@ -13,10 +13,10 @@ export FLUTTER_SDK_HOME=${HOME}/flutter/
 export FLUTTER_TOOLS="${FLUTTER_SDK_HOME}/bin"
 
 # Images
-export WALLPAPERS_HOME=${HOME}/Pictures/wallpapers
+export WALLPAPERS_HOME=${DOTFILES_HOME}/wallpapers
 
 # Shorcuts
-export SHORTCUTS_HOME=${HOME}/.local/bin
+export SHORTCUTS_HOME=${DOTFILES_HOME}/shortcuts
 
 export PATH=${PATH}:${SHORTCUTS_HOME}:${ANDROID_PLATFORM_TOOLS}:${FLUTTER_TOOLS}
 
