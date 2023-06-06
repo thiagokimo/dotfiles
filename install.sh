@@ -109,7 +109,7 @@ symlinkStuff() { \
   # symlinkContent "SXHKD" "$SCRIPT_DIR/config/sxhkd" "$PATH_HOME/.config/" "sxhkd"
   
   # other folders (not necessarily hidden)
-  ln -sf $SCRIPT_DIR/.screenlayout $PATH_HOME/.screenlayout
+  ln -sf $SCRIPT_DIR/screenlayout $PATH_HOME/.screenlayout
   ln -sf $SCRIPT_DIR/.bin $PATH_HOME/.bin
   ln -sf $SCRIPT_DIR/wallpapers $PATH_HOME/wallpapers
   ln -sf $SCRIPT_DIR/keebs $PATH_HOME/keebs
