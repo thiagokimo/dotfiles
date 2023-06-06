@@ -99,11 +99,11 @@ symlinkStuff() { \
   symlinkContent "SXHKD" "$SCRIPT_DIR/config/sxhkd" "$PATH_HOME/.config/" 
   
   # other folders (not necessarily hidden)
-  symlinkContent "SCREEN LAYOUTS" "$SCRIPT_DIR/screenlayout" "$PATH_HOME/.screenlayout"
-  symlinkContent "SHORTCUTS" "$SCRIPT_DIR/local" "$PATH_HOME/.local"
-  symlinkContent "WALLPAPERS" "$SCRIPT_DIR/wallpapers" "$PATH_HOME/wallpapers"
-  symlinkContent "KEYBOARD KEYMAPS" "$SCRIPT_DIR/keebs" "$PATH_HOME/keebs"
-  symlinkContent "SCRIPTS" "$SCRIPT_DIR/scripts" "$PATH_HOME/scripts"
+  symlinkContent "SCREEN LAYOUTS" "$SCRIPT_DIR/.screenlayout" "$PATH_HOME/"
+  symlinkContent "SHORTCUTS" "$SCRIPT_DIR/.local" "$PATH_HOME/"
+  symlinkContent "WALLPAPERS" "$SCRIPT_DIR/wallpapers" "$PATH_HOME/"
+  symlinkContent "KEYBOARD KEYMAPS" "$SCRIPT_DIR/keebs" "$PATH_HOME/"
+  symlinkContent "SCRIPTS" "$SCRIPT_DIR/scripts" "$PATH_HOME/"
  
   sleep 1
   echo ""
