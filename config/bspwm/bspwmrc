@@ -10,7 +10,7 @@ feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg
 
 bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X
 
-if [[ $(xrandr -q | grep "HDMI1 connected") ]]; then
+if [[ $(xrandr -q | grep "HDMI-1 connected") ]]; then
   sh $SCREENLAYOUT_HOME/home.sh
   bspc monitor HDMI-1 -d I II III IV V VI VII VIII IX X
 fi
