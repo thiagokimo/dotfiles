@@ -107,8 +107,10 @@ symlinkStuff() { \
  
   sleep 1
   echo ""
-  echo "The final content of the $PATH_HOME folder is the following:"
-  ls -aLR $PATH_HOME/
+  
+  # Uncomment this and try it in a blank folder to see the final results
+  # echo "The final content of the $PATH_HOME folder is the following:"
+  # ls -aLR $PATH_HOME/
 }
 
 
