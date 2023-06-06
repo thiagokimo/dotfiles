@@ -15,6 +15,9 @@ export FLUTTER_TOOLS="${FLUTTER_SDK_HOME}/bin"
 # Images
 export WALLPAPERS_HOME=${DOTFILES_HOME}/wallpapers
 
+# Screen layouts
+export SCREENLAYOUT_HOME=${DOTFILES_HOME}/screenlayout
+
 # Shorcuts
 export SHORTCUTS_HOME=${DOTFILES_HOME}/shortcuts
 
