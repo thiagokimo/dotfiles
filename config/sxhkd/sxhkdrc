@@ -127,6 +127,12 @@ super + Print
   flameshot gui -c
 
 #
+# lockscreen
+#
+super + shift + x
+  betterlockscreen -l dim
+
+#
 # sound
 #
 XF86AudioLowerVolume

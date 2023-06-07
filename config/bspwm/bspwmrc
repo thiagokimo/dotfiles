@@ -19,7 +19,8 @@ else
 fi
 
 feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg
-
+betterlockscreen -w dim
+source $HOME/.fehbg
 
 bspc config border_width          4
 bspc config window_gap            12
