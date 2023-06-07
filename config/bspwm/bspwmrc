@@ -13,13 +13,13 @@ if [[ $(xrandr -q | grep "HDMI-1 connected") ]]; then
 elif [[ $(xrandr -q | grep "DP-1 connected") ]]; then
   sh $SCREENLAYOUT_HOME/office.sh
   bspc monitor eDP-1 -d I II III IV V
-  bspc monitor DP-1 -d V VI VII VIII IX X
+  bspc monitor DP-1 -d VI VII VIII IX X
 else 
   bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X
 fi
 
-feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg
-betterlockscreen -w dim
+feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg &
+betterlockscreen -w dim &
 source $HOME/.fehbg
 
 bspc config border_width          4
