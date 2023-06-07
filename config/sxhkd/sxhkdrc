@@ -124,7 +124,7 @@ super + {Left,Down,Up,Right}
 # print screen
 #
 super + Print
-  flameshot gui -c
+  flameshot gui
 
 #
 # lockscreen
