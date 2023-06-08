@@ -61,19 +61,19 @@ ensureConfigFolder() { \
 # $1 - name of what the thing is (just used to display what is happening)
 # $2 - source (path)
 # $3 - symlink destination (path)
-# $4 - name of file or folder
+# 
 #
 # # # # # # # # # # # # #
 symlinkContent() { \
   echo "Begin symlinking of $1..."
-  if [ -d "$PATH_HOME/$4" ] || [ -f $PATH_HOME/$4 ]; then
+  if [ -d "$PATH_HOME/$3" ] || [ -f $PATH_HOME/$3 ]; then
     echo "The dots your want to install already exist. Replace? [Y|n]" && read confirm_replace
     
      if ! [[ "$confirm_replace" =~ Y|y ]]; then
       echo "Skipping $1..."
     else
       echo "Replacing dots..."
-      rm -rf $4
+      rm -rf $3
       ln -sf $2 $3
     fi
   else
