@@ -9,6 +9,7 @@ elif [[ $(xrandr -q | grep -wv "eDP-1 connected" | grep "DP-1 connected") ]]; th
   bspc monitor eDP-1 -d I II III IV V
   bspc monitor DP-1 -d VI VII VIII IX X
 else
+  sh $SCREENLAYOUT_HOME/laptop-only.sh
   bspc monitor eDP-1 -d I II III IV V VI VII VIII IX X
 fi
 
