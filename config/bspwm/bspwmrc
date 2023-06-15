@@ -6,10 +6,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 xsetroot -cursor_name left_ptr &
 
 sh $SCRIPTS_HOME/load-monitors.sh
-
-feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg &
-betterlockscreen -w dim &
-source $HOME/.fehbg
+sh $SCRIPTS_HOME/load-wallpaper.sh
+sh $SCRIPTS_HOME/load-lockscreen.sh
 
 bspc config border_width          4
 bspc config window_gap            12
