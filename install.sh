@@ -104,6 +104,7 @@ symlinkStuff() { \
   # things from the .config folder
   ln -sf $SCRIPT_DIR/config/bspwm/bspwmrc $PATH_HOME/.config/bspwm/bspwmrc
   ln -sf $SCRIPT_DIR/config/sxhkd/sxhkdrc $PATH_HOME/.config/sxhkd/sxhkdrc
+  ln -sf $SCRIPT_DIR/config/picom/picom.conf $PATH_HOME/.config/picom/picom.conf
 
   # symlinkContent "BSPWM" "$SCRIPT_DIR/config/bspwm" "$PATH_HOME/.config/" "bspwm" 
   # symlinkContent "SXHKD" "$SCRIPT_DIR/config/sxhkd" "$PATH_HOME/.config/" "sxhkd"
