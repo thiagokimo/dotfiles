@@ -2,12 +2,14 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+sh $SCRIPTS_HOME/load-sxhkd.sh &
+sh $SCRIPTS_HOME/load-monitors.sh &
+sh $SCRIPTS_HOME/load-wallpaper.sh &
+sh $SCRIPTS_HOME/load-lockscreen.sh &
+sh $SCRIPTS_HOME/load-picom.sh &
+
 # fixes mouse cursor
 xsetroot -cursor_name left_ptr &
-
-sh $SCRIPTS_HOME/load-monitors.sh
-sh $SCRIPTS_HOME/load-wallpaper.sh
-sh $SCRIPTS_HOME/load-lockscreen.sh
 
 bspc config border_width          4
 bspc config window_gap            12
