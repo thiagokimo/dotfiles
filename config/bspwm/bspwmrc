@@ -1,7 +1,5 @@
 #! /bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
-
 sh $SCRIPTS_HOME/load-sxhkd.sh &
 sh $SCRIPTS_HOME/load-monitors.sh &
 sh $SCRIPTS_HOME/load-wallpaper.sh &
@@ -21,3 +19,5 @@ bspc config pointer_follows_focus true
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 
+# floating applications
+bspc rule -a Arandr state=floating
