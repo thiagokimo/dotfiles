@@ -1,4 +1,4 @@
 #! /bin/sh
 
-feh --bg-scale $WALLPAPERS_HOME/hollow-knight-nail.jpg
+feh --bg-scale $WALLPAPERS_HOME/wall-04.webp
 
