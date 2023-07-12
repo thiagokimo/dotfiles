@@ -20,5 +20,3 @@ bspc config pointer_follows_focus true
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 
-# floating applications
-bspc rule -a Arandr state=floating
