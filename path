@@ -4,10 +4,11 @@
 export DOTFILES_HOME=${HOME}/.dotfiles
 
 # Android
-export ANDROID_SDK_HOME=${HOME}/Android/
-export ANDROID_STUDIO_HOME=${HOME}/android-studio/
-export ANDROID_PLATFORM_TOOLS=${ANDROID_SDK_HOME}/Sdk/platform-tools/
-export ANDROID_NDK_HOME=${ANDROID_SDK_HOME}Sdk/ndk/
+export ANDROID_SDK_HOME=${HOME}/Android
+export ANDROID_STUDIO_HOME=${HOME}/android-studio
+export ANDROID_PLATFORM_TOOLS=${ANDROID_SDK_HOME}/Sdk/platform-tools
+# Append the NDK version folder at the end of this path
+export ANDROID_NDK_HOME=${ANDROID_SDK_HOME}/Sdk/ndk/25.2.9519653
 
 # Flutter
 export FLUTTER_SDK_HOME=${HOME}/flutter/
