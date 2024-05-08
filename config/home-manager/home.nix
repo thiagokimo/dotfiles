@@ -1,8 +1,20 @@
 { config, pkgs, ... }:
 {
-  home.username = "thiago";
-  home.homeDirectory = "/home/thiago";
-  home.stateVersion = "23.11";
+  home = {
+    username = "thiago";
+    homeDirectory = "/home/thiago";
+    stateVersion = "23.11";
+
+    packages = with pkgs; [
+      bat
+      git
+      htop
+      less
+      neofetch
+      unzip
+      zip
+    ]
+  };
 
   programs.home-manager.enable = true;
   programs.neovim = {
