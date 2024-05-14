@@ -16,7 +16,10 @@
     ]
   };
 
-  programs.home-manager.enable = true;
+  programs.home-manager = {
+    enable = true;
+    path = $HOME/dotfiles/nix
+  };
   programs.neovim = {
     enable = true;
     defaultEditor = true;
