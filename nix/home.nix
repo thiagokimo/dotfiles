@@ -18,7 +18,7 @@
 
   programs.home-manager = {
     enable = true;
-    path = $HOME/dotfiles/nix
+    path = "$HOME/dotfiles/nix";
   };
   programs.neovim = {
     enable = true;
