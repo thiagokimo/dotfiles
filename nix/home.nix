@@ -13,7 +13,7 @@
       neofetch
       unzip
       zip
-    ]
+    ];
   };
 
   programs.home-manager = {
