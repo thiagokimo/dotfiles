@@ -1,5 +1,5 @@
 {
-  description = "My stuff";
+  description = "My Nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -16,7 +16,7 @@
     in {
       homeConfigurations.thiago = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ];
+        modules = [ ./home-manager/home.nix ];
       };
     };
 }
